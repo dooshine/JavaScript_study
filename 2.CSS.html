@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>WEB2-JavaScript</title>
+    <meta charset="utf-8">
+    <script src="color.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><a href="index.html" title="WEB specification">WEB</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" class="saw" title="HTML specification">HTML</a></li>
+            <li><a href="2.CSS.html" class="saw active" title="CSS specification">CSS</a></li>
+            <li><a href="3.JavaScript.html" title="JavaScript specification">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2>CSS이란 무엇인가?</h2>
+            <p>HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일시트 언어.<br>
+            <a href="https://namu.wiki/w/CSS" target="_blank" title="CSS specification">CSS</a>의 C가 Cascading[1]의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다. 다만 예외로 마진, 패딩, 보더 등의 박스모델 관련 속성은 상속되지 않는다. 물론 inherit 값을 줘서 강제로 상속시킬 순 있다</p>
+        </div>
+    </div>
+    <div class="vis_class">
+        <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor= 'black';
+            document.querySelector('body').style.color= 'white';
+        ">
+        <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor= 'white';
+            document.querySelector('body').style.color= 'black';        
+        ">
+        <input type="button" class="toggle" value="day" onclick="
+            vis_mod(this);
+        ">
+    </div>
+</body>
+
+</html>

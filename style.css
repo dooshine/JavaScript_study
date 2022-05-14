@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+}
+/* 내가 처음 해본 것, 안 됨 => class saw가 아니라 tag saw를 의미하기 때문
+saw {
+    color:gray;
+}
+*/
+.saw {
+    color: gray;
+}
+/* 한 id값을 가지는 선택자는 유일해야 한다.(active id 값을 가지는 다른 존재가 없어야함) */
+.active {
+    color: red;
+}
+h1 {
+   text-align: center;
+   margin: 0;
+   padding: 10px;
+}
+.vis_class {
+    text-align: right;
+}
+@media (min-width: 800px) {
+    #grid ol {
+        border-right: 2px black solid;
+        margin: 0;
+        padding: 12px;
+        margin-left: 12px;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+    }
+    #article {
+        margin-left: 12px;
+    }
+    h1 {
+        font-size: 50px;  /* px, large, %, larger, etc */
+        border-bottom: 2px black solid;
+    }
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WEB2-JavaScript</title>
+</head>
+<body>
+    <h1>Loop</h1>
+    <ul>
+    <script>
+        document.write('<li>1</li>');
+        var i=0
+        while(i++<3){
+            document.write('<li>'+i+'</li>');
+        }
+    </script>
+    </ul>
+    <h2>Loop & Array</h2>
+    <script>
+        var coworkers = ['DYK','HTH','NJY','KYS'];
+    </script>
+    <h3>coworkers</h3>
+    <ul>
+        <script>
+            var i= 0;
+            while(i++<coworkers.length){
+                document.write('<li>'+coworkers[i-1]+'</li>');
+            }
+        </script>
+    </ul>
+</body>
+</html>

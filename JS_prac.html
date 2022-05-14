@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS</h1>
+    <input type="button" class="toggle" value="day" onclick="
+        var target= document.querySelector('body');
+        var tog= document.querySelectorAll('.toggle');
+        var href= document.querySelectorAll('a');
+        if(this.value === 'day'){
+            target.style.backgroundColor= 'black';
+            target.style.color= 'white';
+            for(var i=0; i<tog.length; i++){
+                tog[i].value= 'night';
+            }
+        } else{
+            target.style.backgroundColor= 'white';
+            target.style.color= 'black';
+            for(var i=0; i<tog.length; i++){
+                tog[i].value= 'day';
+            }
+            for(var i=0; i<href.length; i++){
+                href[i].style.color= 'green';
+            }
+        }
+    ">
+    <input type="button" class="toggle" value="day" onclick="
+        var target= document.querySelector('body');
+        var tog= document.querySelectorAll('.toggle');
+        var href= document.querySelectorAll('a');
+        if(this.value === 'day'){
+            target.style.backgroundColor= 'black';
+            target.style.color= 'white';
+            for(var i=0; i<tog.length; i++){
+                tog[i].value= 'night';
+            }
+        } else{
+            target.style.backgroundColor= 'white';
+            target.style.color= 'black';
+            for(var i=0; i<tog.length; i++){
+                tog[i].value= 'day';
+            }
+            for(var i=0; i<href.length; i++){
+                href[i].style.color= 'green';
+            }
+        }
+    ">
+    <input type="button" class="toggle" value="day" onclick="
+        var target= document.querySelector('body');
+        var tog= document.querySelectorAll('.toggle');
+        var href= document.querySelectorAll('a');
+        if(this.value === 'day'){
+            target.style.backgroundColor= 'black';
+            target.style.color= 'white';
+            for(var i=0; i<tog.length; i++){
+                tog[i].setAttribute('value', 'night');
+            }
+        } else{
+            target.style.backgroundColor= 'white';
+            target.style.color= 'black';
+            for(var i=0; i<tog.length; i++){
+                tog[i].setAttribute('value', 'day');
+            }
+            for(var i=0; i<href.length; i++){
+                href[i].style.color= 'green';
+            }
+       }
+    ">
+
+
+</body>
+
+</html>
